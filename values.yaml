@@ -1,0 +1,21 @@
+appName: busybox
+
+namespace: 28071-busyboxdeployment
+
+replicaCount: 1
+
+image:
+  repository: yetivishnuvardhan/busybox
+  tag: latest
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 8080
+
+resources: {}
+
+configmap:
+  name: busybox-configmap
+  data:
+    message: "Hello from BusyBox!"
