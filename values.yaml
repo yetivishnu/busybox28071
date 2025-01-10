@@ -1,4 +1,4 @@
-appName: busybox
+appName: busybox:v1
 
 namespace: 28071-busyboxdeployment
 
